@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Lato', sans-serif;
+	line-height: 1;
+}
+.contenido{
+        /* background: url(./img/emile-perron-190221-unsplash.jpg) no-repeat fixed center center; */
+        background-color: #323232;
+        /* background-size: cover;
+        position: relative; */
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+}
+/* .contenido::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #323232;
+    position: absolute;
+    opacity: 0.8;
+
+} */
+
+.sidebar-navigation {
+    padding-top: 10%;
+	display: inline-block;
+	min-height: 100vh;
+    background-color:rgb(0, 0, 0);
+   
+}
+	
+/* ul {
+text-align: center;
+
+} */
+li {
+padding: 28px 0;
+cursor: pointer;
+transition: all ease-out 120ms;
+color: #7A736D;
+}
+i {
+font-size: 26px;
+
+}
+
+li:hover{
+    
+    color: #C94F3A;
+    transition: all ease 450ms;
+}
+			
+/* home */
+
+.textoPrincipal {
+/*     position: relative;
+    padding: 30% 10%;
+    text-align: left; */
+
+    font-size: 20px;
+}
+h1{
+    color: #C94F3A;
+}
+h4{
+    padding-top: 20px;
+    color: #7A736D;
+}
