@@ -11,7 +11,6 @@
         /* background-size: cover;
         position: relative; */
         font-family: 'Roboto', sans-serif;
-        display: flex;
 }
 /* .contenido::before{
     content: "";
@@ -42,9 +41,8 @@ cursor: pointer;
 transition: all ease-out 120ms;
 color: #7A736D;
 }
-i {
+.iconNav {
 font-size: 26px;
-
 }
 
 li:hover{
@@ -52,20 +50,131 @@ li:hover{
     color: #C94F3A;
     transition: all ease 450ms;
 }
-			
+        
+
 /* home */
 
 .textoPrincipal {
-/*     position: relative;
-    padding: 30% 10%;
-    text-align: left; */
-
+    padding-top: 12%;
     font-size: 20px;
 }
 h1{
     color: #C94F3A;
 }
-h4{
-    padding-top: 20px;
+.h4, h4{
+    padding-top: 10px;
     color: #7A736D;
+}
+
+
+/* skills */
+#skills{
+    display:none;
+}
+
+section p{
+    color: #7A736D;
+}
+
+.iconSkills{
+    color: antiquewhite;
+    font-size: 50px;
+    padding: 30px;
+}
+
+/* works */
+#works{
+    display: none;
+}
+
+.jp-gallery {
+    padding: 40px;
+}
+
+.jp-gallery .lightbox img {
+    width: 170px;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.jp-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.jp-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 3s linear infinite both;
+	        animation: vibrate-1 3s linear infinite both;
+}
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
 }
