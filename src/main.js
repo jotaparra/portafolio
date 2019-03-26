@@ -7,6 +7,7 @@ document.getElementById('btnSkills').addEventListener('click',()=>{
 document.getElementById('btnHome').addEventListener('click', ()=>{
     document.getElementById('skills').style.display='none';
     document.getElementById('home').style.display='block';
+    document.getElementById('works').style.display='none';
 })
 
 document.getElementById('btnWorks').addEventListener('click',()=>{
