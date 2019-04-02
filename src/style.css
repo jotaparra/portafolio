@@ -12,6 +12,27 @@
         position: relative; */
         font-family: 'Roboto', sans-serif;
 }
+.hero-bkg-animated {
+    background: gray url("https://www.toptal.com/designers/subtlepatterns/patterns/white-waves.png") repeat 0 0;
+    /* "https://www.toptal.com/designers/subtlepatterns/patterns/qbkls.png" */
+    /* "https://www.toptal.com/designers/subtlepatterns/patterns/what-the-hex-dark.png" */
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 60s linear infinite;
+  }
+  
+  .hero-bkg-animated h1 {
+    font-family: sans-serif;
+  }
+  
+  @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -400px 0; }
+  }
+
 /* .contenido::before{
     content: "";
     width: 100%;
@@ -31,10 +52,9 @@
    
 }
 	
-/* ul {
-text-align: center;
-
-} */
+.fixed {
+position: fixed;
+} 
 li {
 padding: 28px 0;
 cursor: pointer;
@@ -176,5 +196,89 @@ section p{
 
     .container.gallery-container {
         border-radius: 0;
+    }
+}
+
+/* estilos de sección contacto */
+#contact{
+    padding: 100px;
+    display:none;
+}
+.azul-linkedin{
+    color: #0077B5;
+}
+.negro-github{
+    color: #000000;
+}
+
+.gradient-instagram{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 40px;
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+
+/* estilos de sección contacto */
+/* --- PORTAFOLIO --- */
+
+#portfolio{
+    display: none;
+}
+.portafolio {
+	background: #fff;
+	border-top: 5px solid #3da5e2;
+	padding: 0 20px;
+}
+
+.portafolio .titulo {
+	padding: 40px 0;
+	text-align: center;
+	color: #3da5e2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.portafolio .galeria .contenedor-imagen {
+	margin-bottom: 40px;
+	max-height: 180px;
+	overflow: hidden;
+}
+
+.portafolio .galeria .contenedor-imagen a {
+	background: #3da5e2;
+	display: inline-block;
+}
+
+.portafolio .galeria .contenedor-imagen:hover img {
+	opacity: .3;
+}
+
+.portafolio .modal-dialog {
+	margin: 0px auto;
+	height: 100%;
+	max-width: 1000px;
+}
+
+.portafolio .modal-content {
+	width: auto;
+}
+
+@media screen and (max-width:991px) {
+
+
+	.portafolio .galeria .contenedor-imagen:nth-child(1) {order:1;}
+	.portafolio .galeria .contenedor-imagen:nth-child(2) {order:3;}
+	.portafolio .galeria .contenedor-imagen:nth-child(3) {order:6;}
+	.portafolio .galeria .contenedor-imagen:nth-child(4) {order:2;}
+	.portafolio .galeria .contenedor-imagen:nth-child(5) {order:5;}
+	.portafolio .galeria .contenedor-imagen:nth-child(6) {order:4;}
+	.portafolio .galeria .contenedor-imagen:nth-child(7) {order:7;}
+
+	.modal .modal-dialog {
+		width: 90%;
     }
 }

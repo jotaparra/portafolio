@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="contenido">
+<body>
     <div class="container-fluid">
         <div class="row">
             <nav class="col-md-1 sidebar-navigation">
-                <ul class="col">
+                <ul class="col fixed">
                     <li>
                         <i id="btnHome" class="iconNav fas fa-home"></i>
                         <span class="tooltip"></span>
@@ -33,15 +33,17 @@
                         <span class="tooltip"></span>
                     </li>
                     <li>
-                        <i class="iconNav fas fa-envelope"></i>
+                        <i id="btnContact" class="iconNav fas fa-envelope"></i>
                         <span class="tooltip"></span>
                     </li>
                 </ul>
             </nav>
-            <section id="home" class="col-md-11">
+
+
+            <section id="home" class="col-md-11 hero-bkg-animated">
                 <div class="col textoPrincipal">
                     <h1>Hola, mi nombre es Jennifer</h1>
-                    <h4>Desarrolladora front-end, bibliotecóloga, mamá, ipsum dolor.</h4>
+                    <h4>Desarrolladora front-end, bibliotecóloga, curiosa, adicta al café</h4>
                 </div>
             </section>
             <!-- sección habilidades -->
@@ -84,63 +86,108 @@
                 </div>
 
             </section>
-            <section id="works" class="col-md-11">
-                    <div class="container">    
-                            <div class="jp-gallery">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4">
-                                        <a class="lightbox" href="">
-                                            <img src="./img/proyecto_banigualdad.png" alt="proyecto banigualdad">
-                                        </a>
+            <section id="portfolio" class="container">
+                    <div class="row mt-3 mb-3">
+                            <div class="col"> 
+                                <div class="card-columns">  <!-- esta es la clase con la cual vamos a lograr que las card que estén adentro se acomoden -->
+                                    <div class="card">
+                                        <img src="img/Cine en el Aula.png" class="card-img-top img-fluid" alt=""> <!-- con img-fluid, la imagen abarcará el 100% de la columna -->
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Cine en el aula</h3>
+                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <a class="lightbox" href="">
-                                            <img src="./img/orientados.png" alt="proyecto Orienta2">
-                                        </a>
+                
+                                    <div class="card">
+                                        <img src="img/Pokekids.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Pokekids</h3>
+                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
+                                            
+                                        </div>
                                     </div>
-                                    <div class="col-sm-12 col-md-4">
-                                        <a class="lightbox" href="">
-                                            <img src="./img/Cine en el Aula.png" alt="proyecto Cine en el Aula">
-                                        </a>
+                
+                                    <div class="card">
+                                        <img src="img/-Fundación Banigualdad.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Proyecto para banigualdad</h3>
+                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <a class="lightbox" href="">
-                                            <img src="./img/Pokekids.png" alt="proyecto dataLovers">
-                                        </a>
+                
+                                    <div class="card">
+                                        <img src="img/orientados.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Orientados</h3>
+                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <a class="lightbox" href="">
-                                            <img src="" alt="">
-                                        </a>
+                
+                                    <div class="card">
+                                        <img src="img/Pokekids.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Titulo 5</h3>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+                                            <a href="#" class="btn btn-primary btn-block btn-lg">Boton</a>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4">
-                                        <a class="lightbox" href="">
-                                            <img src="" alt="">
-                                        </a>
-                                    </div>
+            
                                 </div>
-                        
                             </div>
-                        
+                        </div>
+            </section>
+
+
+            <section id="contact" class="container col-md-11">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-7">
+                            <h3>Si tienes alguna consulta o quieres trabajar conmigo</h3>
+                            <h3>Contáctame</h3>
+                            <table class="table">
+                                <tr>
+                                    <td>Email</td>
+                                    <td><a href="mailto:">jparra.biblio@gmail.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Teléfono</td>
+                                    <td>966136355</td>
+                                </tr>
+                                <tr>
+                                    <td>Social</td>
+                                    <td><a class="negro-github" href="#"><i class="fab fa-github"></i></a>
+                                        <a class="azul-linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="gradient-instagram" href="#"><i class="fab fa-instagram"></i></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5 text-center">
+                            <img src="./img/me_background.jpg" alt="icono mujer">
+                            <div class="row">
+                                <div class="col">
+                                    <a type="button" class="btn btn-seconday btn-download" href="" download="Curriculum">
+                                        Descargar CV
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
+                    </div>
+
+
+                </div>
             </section>
-        </div>
-
-        <section id="contact">
-
-        </section>
 
 
 
 
-        <!--         <i class="devicon-css3-plain-wordmark"></i>
+            <!--         <i class="devicon-css3-plain-wordmark"></i>
         <i class="devicon-javascript-plain colores"></i>
         <i class="iconSkills devicon-visualstudio-plain"></i>
         <i class="mt-5 iconSkills devicon-illustrator-plain"></i>
         <i class="devicon-react-original-wordmark"></i> -->
 
-
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
