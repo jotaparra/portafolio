@@ -1,4 +1,4 @@
-window.onload = () =>{
+/* window.onload = () =>{
 document.getElementById('btnSkills').addEventListener('click',()=>{
     document.getElementById('skills').style.display='block';
     document.getElementById('home').style.display='none';
@@ -38,6 +38,6 @@ $(function(){
 	$('#modal').on('click', function(){
 		$('#modal').modal('hide');
 	});
-})
+}) */
 
 
