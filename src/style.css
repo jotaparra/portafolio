@@ -88,9 +88,9 @@ h1{
 
 
 /* skills */
-#skills{
+/* #skills{
     display:none;
-}
+} */
 
 section p{
     color: #7A736D;
@@ -103,9 +103,9 @@ section p{
 }
 
 /* works */
-#works{
+/* #works{
     display: none;
-}
+} */
 
 .jp-gallery {
     padding: 40px;
@@ -202,7 +202,7 @@ section p{
 /* estilos de sección contacto */
 #contact{
     padding: 100px;
-    display:none;
+    /* display:none; */
 }
 .azul-linkedin{
     color: #0077B5;
@@ -226,7 +226,7 @@ section p{
 /* --- PORTAFOLIO --- */
 
 #portfolio{
-    display: none;
+    /* display: none; */
 }
 .portafolio {
 	background: #fff;
