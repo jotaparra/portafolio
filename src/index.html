@@ -1,201 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'
+        crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf'
+        crossorigin='anonymous'>
+    <link rel='stylesheet' href='./style.css'>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-1 sidebar-navigation">
-                <ul class="col fixed">
+    <div class='container-fluid'>
+        <div class='row'>
+            <nav class='col-md-1 position-fixed sidebar-navigation' id='sticky-sidebar'>
+                <ul class='col'>
                     <li>
-                        <i id="btnHome" class="iconNav fas fa-home"></i>
-                        <span class="tooltip"></span>
+                        <a href='#home' class='iconNav'><i id='btnHome' class='fas fa-home'></i></a>
+                        <span class='tooltip'></span>
                     </li>
                     <li>
-                        <i id="btnSkills" class="iconNav fas fa-cog"></i>
-                        <span class="tooltip"></span>
+                        <a href='#acercaDeMi'><i id='btnSkills' class='iconNav fas fa-cog'></i></a>
+                        <span class='tooltip'></span>
                     </li>
                     <li>
-                        <i id="btnWorks" class="iconNav fas fa-briefcase"></i>
-                        <span class="tooltip"></span>
+                        <a href='#portfolio'><i id='btnWorks' class='iconNav fas fa-briefcase'></i></a>
+                        <span class='tooltip'></span>
                     </li>
                     <li>
-                        <i id="btnContact" class="iconNav fas fa-envelope"></i>
-                        <span class="tooltip"></span>
+                        <a href='#contact'><i id='btnContact' class='iconNav fas fa-envelope'></i></a>
+                        <span class='tooltip'></span>
                     </li>
                 </ul>
             </nav>
 
+            <main class='col offset-1'>
 
-            <section id="home" class="col-md-11 hero-bkg-animated">
-                <div class="col textoPrincipal">
-                    <h1>Hola, mi nombre es Jennifer</h1>
-                    <h4>Desarrolladora front-end, bibliotecóloga, curiosa, adicta al café</h4>
-                </div>
-            </section>
-            <!-- sección habilidades -->
-            <section id="skills" class='col-md-11'>
-                <div class="row">
-                    <div class="col-md-6 pl-4 textoPrincipal">
-                        <h1>Skills</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur. <br>
-                            Incidunt facere atque, quasi minima unde<br>
-                            numquam! Dolor, doloremque et minima quis <br>
-                            quod modi commodi? Magni, veniam?<br></p>
-
-                        <p>Incidunt facere atque, quasi minima <br>
-                            numquam! Dolor, doloremque et minima quis<br>
-                            quod modi commodi? Magni, veniam? Lorem <br>
-                            consectetur adipisicing elit.</p>
-
-                        <p>Lorem ipsum dolor sit amet consectetur. <br>
-                            Incidunt facere atque, quasi minima unde<br>
-                            numquam! Dolor, doloremque et minima quis <br>
-                            quod modi commodi? Magni, veniam?<br></p>
-                    </div>
-
-                    <div class="col-md-5 textoPrincipal">
-                        <div class="row pt-5">
-                            <div class="col vibrate-1">
-                                <i class="iconSkills devicon-html5-plain"></i>
-                                <i class="iconSkills devicon-css3-plain"></i>
-                                <i class="iconSkills devicon-github-plain"></i>
-                            </div>
-                        </div>
-                        <div class="row pt-5">
-                            <div class="col vibrate-1">
-                                <i class="mt-5 iconSkills devicon-javascript-plain"></i>
-                                <i class="mt-5 iconSkills devicon-react-original"></i>
-                                <i class="mt-5 iconSkills devicon-git-plain"></i>
-                            </div>
+                <!-- sección home -->
+                <section id='home' class='row'>
+                    <div class='padding-contenido hero-bkg-animated'>
+                        <div class='contenedor col textoPrincipal'>
+                            <h1>Hola, mi nombre es Jennifer</h1>
+                            <h4 id='msj'></h4>
                         </div>
                     </div>
-                </div>
+                </section>
 
-            </section>
-            <section id="portfolio" class="container">
-                    <div class="row mt-3 mb-3">
-                            <div class="col"> 
-                                <div class="card-columns">  <!-- esta es la clase con la cual vamos a lograr que las card que estén adentro se acomoden -->
-                                    <div class="card">
-                                        <img src="img/Cine en el Aula.png" class="card-img-top img-fluid" alt=""> <!-- con img-fluid, la imagen abarcará el 100% de la columna -->
-                                        <div class="card-body text-center">
-                                            <h3 class="card-title">Cine en el aula</h3>
-                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
-                                        </div>
-                                    </div>
-                
-                                    <div class="card">
-                                        <img src="img/Pokekids.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body text-center">
-                                            <h3 class="card-title">Pokekids</h3>
-                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
-                                            
-                                        </div>
-                                    </div>
-                
-                                    <div class="card">
-                                        <img src="img/-Fundación Banigualdad.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body text-center">
-                                            <h3 class="card-title">Proyecto para banigualdad</h3>
-                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
-                                        </div>
-                                    </div>
-                
-                                    <div class="card">
-                                        <img src="img/orientados.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Orientados</h3>
-                                            <a href="#" class="btn btn-primary">Ir al proyecto</a>
-                                        </div>
-                                    </div>
-                
-                                    <div class="card">
-                                        <img src="img/Pokekids.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Titulo 5</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
-                                            <a href="#" class="btn btn-primary btn-block btn-lg">Boton</a>
-                                        </div>
-                                    </div>
-            
+                <!-- sección acerca de mi -->
+                <section class='row' id='acercaDeMi'>
+                    <div class='row align-items-center'>
+                        <div class='col-md-6'>
+                            <div class='padding-contenido'>
+                                <h1>Acerca de mi</h1>
+                                <p>Egresada de Laboratoria como front-end developer Jr,
+                                    y de profesión bibliotecóloga documentalista.</p>
+
+                                <p>Me gusta trabajar tanto en equipo como individualmente y 
+                                    tengo buen sentido del humor.</p>
+
+                                <p>Me gusta leer, los videojuegos, viajar, ver películas y series, amante
+                                    de la cocina y siempre estoy en búsqueda de nuevos aprendizajes.</p>
+                            </div>
+                        </div>
+                        <div class='col-md-5 group-icons'>
+                            <div class='row'>
+                                <div class='col vibrate-1'>
+                                    <i class='iconSkills devicon-html5-plain'></i>
+                                    <i class='iconSkills devicon-css3-plain'></i>
+                                    <i class='iconSkills devicon-github-plain'></i>
+                                </div>
+                            </div>
+                            <div class='row pt-5'>
+                                <div class='col vibrate-1'>
+                                    <i class='mt-5 iconSkills devicon-javascript-plain'></i>
+                                    <i class='mt-5 iconSkills devicon-react-original'></i>
+                                    <i class='mt-5 iconSkills devicon-git-plain'></i>
                                 </div>
                             </div>
                         </div>
-            </section>
+                    </div>
 
+                </section>
 
-            <section id="contact" class="container col-md-11">
-                <div class="row">
-                    <div class="row">
-                        <div class="col-7">
-                            <h3>Si tienes alguna consulta o quieres trabajar conmigo</h3>
-                            <h3>Contáctame</h3>
-                            <table class="table">
-                                <tr>
-                                    <td>Email</td>
-                                    <td><a href="mailto:">jparra.biblio@gmail.com</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Teléfono</td>
-                                    <td>966136355</td>
-                                </tr>
-                                <tr>
-                                    <td>Social</td>
-                                    <td><a class="negro-github" href="#"><i class="fab fa-github"></i></a>
-                                        <a class="azul-linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="gradient-instagram" href="#"><i class="fab fa-instagram"></i></a></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-5 text-center">
-                            <img src="./img/me_background.jpg" alt="icono mujer">
-                            <div class="row">
-                                <div class="col">
-                                    <a type="button" class="btn btn-seconday btn-download" href="" download="Curriculum">
-                                        Descargar CV
-                                    </a>
+                <!-- sección mi portafolio -->
+                <section id='portfolio' class='row'>
+                    <div class='padding-contenido pt-5'>
+                        <h1>Mi portafolio</h1>
+                    </div>
+                    <!-- contenedor de cards - masonry -->
+                    <div class='row pt-4 pb-3 padding-contenido'>
+                        <div class='col div-group-cards'>
+                            <div class='card-columns'>
+                                <!-- esta es la clase con la cual vamos a lograr que las card que estén adentro se acomoden -->
+                                <div class='card'>
+                                    <img src='img/Cine en el Aula.png' class='card-img-top img-fluid byn' alt='imagen de la página principal del proyecto cine en el aula'>
+                                    <!-- con img-fluid, la imagen abarcará el 100% de la columna -->
+                                    <div class='card-body text-center'>
+                                        <a href='#' class='btn-sm btn-cards'>Visitar proyecto</a>
+                                    </div>
+                                </div>
+                                <div class='card'>
+                                    <img src='img/Fundacion_banigualdad.png' class='card-img-top img-fluid byn' alt='imagen de la página principal del proyecto para Fundación igualdad'>
+                                    <div class='card-body text-center'>
+                                        <a href='#' class='btn-sm btn-cards'>Visitar proyecto</a>
+                                    </div>
+                                </div>
+                                <div class='card'>
+                                    <img src='img/Pokekids.png' class='card-img-top img-fluid byn' alt='imagen de la página principal del proyecto Pokekids'>
+                                    <div class='card-body text-center'>
+                                        <a href='#' class='btn-sm btn-cards'>Visitar proyecto</a>
+                                    </div>
+                                </div>
+                                <div class='card'>
+                                    <img src='img/orientados.png' class='card-img-top img-fluid byn' alt='imagen de la página principal del proyecto Orienta2'>
+                                    <div class='card-body text-center'>
+                                        <a href='#' class='btn-sm btn-cards'>Visitar proyecto</a>
+                                    </div>
+                                </div>
+                                <div class='card'>
+                                    <img src='./img/Data_bank.png' class='card-img-top img-fluid byn' alt=''>
+                                    <div class='card-body text-center'>
+                                        <a href='#' class='btn-sm btn-cards'>Visitar proyecto</a>
+                                    </div>
+                                </div>
+                                <div class='card'>
+                                    <img src='./img/conversemos.png' class='card-img-top img-fluid byn' alt=''>
+                                    <div class='card-body text-center'>
+                                        <a href='#' class='btn-sm btn-cards'>Visitar proyecto</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
 
+                <!-- sección acerca de contacto -->
+                <section id='contact' class='row align-items-center'>
+                    <div class='col padding-contenido'>
+                        <h3>Si tienes alguna consulta o quieres trabajar conmigo</h3>
+                        <h2><span class='white'>Contáctame</span></h2>
+                        <table class='table mt-4 mb-5'>
+                            <tr class=' pt-5'>
+                                <td class='gray'>Email</td>
+                                <td><a class='white2 mail' href='mailto:'>jparra.biblio@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td class='gray'>Teléfono</td>
+                                <td class='white2'>9 6613 6355</td>
+                            </tr>
+                            <tr>
+                                <td class='gray'>Social</td>
+                                <td><a href='https://github.com/jotaparra' target=”_blank”><i class='white2 fab fa-github'></i></a>
+                                    <a href='#'><i class='white2 fab fa-linkedin-in'></i></a>
+                                    <a href='#'><i class='white2 fab fa-instagram'></i></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class='col-5 text-center'>
+                        <img src='./img/me_background.jpg' alt='icono mujer'>
+                        <div class='row'>
+                            <div class='col'>
+                                <a type='button' class='btn btn-principal mt-3' href='' download='Curriculum'>
+                                    Descargar CV
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-
-                </div>
-            </section>
-
-
-
-
-            <!--         <i class="devicon-css3-plain-wordmark"></i>
-        <i class="devicon-javascript-plain colores"></i>
-        <i class="iconSkills devicon-visualstudio-plain"></i>
-        <i class="mt-5 iconSkills devicon-illustrator-plain"></i>
-        <i class="devicon-react-original-wordmark"></i> -->
-
+                </section>
+            </main>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
+        crossorigin='anonymous'></script>
+    <script src='./main.js'></script>
 </body>
 
 </html>

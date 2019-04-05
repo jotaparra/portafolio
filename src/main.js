@@ -1,43 +1,26 @@
-/* window.onload = () =>{
-document.getElementById('btnSkills').addEventListener('click',()=>{
-    document.getElementById('skills').style.display='block';
-    document.getElementById('home').style.display='none';
-    document.getElementById('contact').style.display='none';
-    document.getElementById('works').style.display='none';
-});
+window.onload = ()=>{
+var writing = str => {
+    let arrFromStr = str.split('');
+    let  i = 0;
+    let printStr = setInterval(function(){
+        if(arrFromStr[i] === ' '){
+            document.getElementById('msj').innerHTML += arrFromStr[i ];
+            document.getElementById('msj').innerHTML += arrFromStr[i + 1];
+            i += 2;
 
-document.getElementById('btnHome').addEventListener('click', ()=>{
-    document.getElementById('skills').style.display='none';
-    document.getElementById('home').style.display='block';
-    document.getElementById('works').style.display='none';
-    document.getElementById('contact').style.display='none';
-});
+        }else{
+            document.getElementById('msj').innerHTML += arrFromStr[i];
+            i++;
+        }
+        document.getElementById('msj').innerHTML += arrFromStr[i];
+        i++;
 
-document.getElementById('btnWorks').addEventListener('click',()=>{
-    document.getElementById('portfolio').style.display='block';
-    document.getElementById('home').style.display='none';
-    document.getElementById('skills').style.display='none';
-    document.getElementById('contact').style.display='none';
-});
+        if (i === arrFromStr.length ){
+            clearInterval(printStr);           
 
-document.getElementById('btnContact').addEventListener('click',()=>{
-    document.getElementById('portfolio').style.display='none';
-    document.getElementById('home').style.display='none';
-    document.getElementById('skills').style.display='none';
-    document.getElementById('contact').style.display='block';
-});
+        }
+    },140); // 120 es el tiempo que yo le asigné, pueden cambiarlo para que sea más rápido o lento
+};
+
+writing('Desarrolladora front-end, bibliotecóloga, curiosa, adicta al café');
 }
-
-$(function(){
-	$('.galeria .contenedor-imagen').on('click', function(){
-		$('#modal').modal;
-		var ruta_imagen = ($(this).find('img').attr('src'));
-		$('#imagen-modal').attr('src', ruta_imagen);
-	});
-
-	$('#modal').on('click', function(){
-		$('#modal').modal('hide');
-	});
-}) */
-
-
