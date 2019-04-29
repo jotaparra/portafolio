@@ -1,5 +1,5 @@
 window.onload = ()=>{
-var writing = str => {
+let writing = str => {
     let arrFromStr = str.split('');
     let  i = 0;
     let printStr = setInterval(function(){
@@ -21,6 +21,5 @@ var writing = str => {
         }
     },140); // 120 es el tiempo que yo le asigné, pueden cambiarlo para que sea más rápido o lento
 };
-
 writing('Desarrolladora front-end, bibliotecóloga, curiosa, adicta al café');
 }
