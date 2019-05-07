@@ -18,6 +18,7 @@ let writing = str => {
         if (i === arrFromStr.length ){
             clearInterval(printStr);           
 
+            
         }
     },140); // 120 es el tiempo que yo le asigné, pueden cambiarlo para que sea más rápido o lento
 };
