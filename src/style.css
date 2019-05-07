@@ -8,22 +8,35 @@
 }
 
 .padding-contenido{
-    padding-left: 35px;
+    padding: 0 100px;
 }
 
-.textoPrincipal {
-    padding-top: 12%;
-    font-size: 20px;
-}
 h1{
     color: #C94F3A;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 60px;
+    letter-spacing: 2px;
+    
 }
 h2{
     color: #eceaea;
 }
 .h4, h4{
-    padding-top: 10px;
-    color: #7A736D;
+    padding-top: 70px;
+    color: #191a17;
+    /* color: #7A736D; */
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.paragraph{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 0; 
+
 }
 
 section p, h3{
@@ -68,13 +81,8 @@ section p, h3{
     width: 100%;
     margin: 0;
     min-height: 100vh;
-    padding-top: 120px;
-    box-sizing: border-box;
+    padding-top: 60px;
     -webkit-animation: slide 10s linear infinite;
-  }
-  
-  .hero-bkg-animated h1 {
-    font-family: sans-serif;
   }
   
   @-webkit-keyframes slide {
@@ -182,8 +190,17 @@ color: #7A736D;
 
 /*---Estilos de mi portafolio*/
 
+#home a{
+    text-decoration: none;
+    color: #C94F3A;
+}
+#home a:hover{
+    text-decoration: none;
+    color:#191a17;
+}
 .div-group-cards{
     padding: 0 100px;
+    
 }
 
 .btn-cards{
