@@ -81,7 +81,7 @@ section p, h3{
     width: 100%;
     margin: 0;
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: 100px;
     -webkit-animation: slide 10s linear infinite;
   }
   
@@ -93,9 +93,9 @@ section p, h3{
 
 /*---Estilos seccion acerca de mi---*/
 #acercaDeMi{
-    width: 100%;
     min-height: 100vh;
     background-color: #000000;
+    
 }
        
 .group-icons{
@@ -170,6 +170,7 @@ section p, h3{
     padding-top: 10%;
 	min-height: 100vh;
     background-color:#000000; 
+    
 }
 	
 li {
@@ -231,7 +232,6 @@ color: #7A736D;
 /* estilos de sección contacto */
 
 #contact{
-    width: 100%;
     min-height: 100vh;
     background-color: #000000;
 }
